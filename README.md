@@ -1,64 +1,273 @@
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fstryker-mutator%2Fstryker-dashboard%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/stryker-mutator/stryker-dashboard/master)
-[![Build Status](https://github.com/stryker-mutator/stryker-dashboard/workflows/CI/badge.svg)](https://github.com/stryker-mutator/stryker-dashboard/actions?workflow=CI)
-[![Gitter](https://badges.gitter.im/stryker-mutator/stryker.svg)](https://gitter.im/stryker-mutator/stryker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Dependency Status](https://img.shields.io/david/stryker-mutator/stryker-badge.svg)](https://david-dm.org/stryker-mutator/stryker-badge)
-[![devDependency Status](https://img.shields.io/david/dev/stryker-mutator/stryker-badge.svg)](https://david-dm.org/stryker-mutator/stryker-badge#info=devDependencies)
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [SPIKE] Enable alcohol delivery for Uber without Tobacco and Knives [2 days]
+    "active" : 1
+    "waiting" : 4
+```
 
-![Stryker](https://github.com/stryker-mutator/stryker/raw/master/stryker-80x80.png)
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [SPIKE] Enable alcohol delivery for Uber without Tobacco and Knives [2 days]
+    "In Progress" : 1
+    "To Do" : 1
+    "Peer Review" : 3
+```
 
-# The Stryker dashboard
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Allow Uber to return orders 
+    "active" : 0
+    "waiting" : 3
+```
 
-## Local development
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Allow Uber to return orders 
+    "In Progress" : 0
+    "To Do" : 0
+    "Peer Review" : 0
+    "QA - Ready" : 0
+    "QA" : 0
+    "Ready For Merge" : 3
+```
 
-### Requirements
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Decision engine changes
+    "active" : 36
+    "waiting" : 8
+```
 
-First things first, there's always something before you can start.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Decision engine changes
+    "In Progress" : 20
+    "Peer Review" : 5
+    "QA - Ready" : 1
+    "QA" : 16
+    "Done" : 2
+    "Ready For Merge" : 0
+```
 
-To make our life easier, we use [NPM](https://www.npmjs.com/) a lot. Make sure you have it installed.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA task] Execute pharma enablement for Uber
+    "active" : 5
+    "waiting" : 0
+```
 
-Our application runs in [Docker](https://www.docker.com/). If you don't already use it, now would be the time. Make sure the Docker daemon is up and running.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA task] Execute pharma enablement for Uber
+    "In Progress" : 5
+```
 
-We store our data in [Azure Storage](https://azure.microsoft.com/en-us/free/services/storage/), so you need to be able to do so as well. On Windows, you can use the [Azure Storage Emulator](https://docs.microsoft.com/en-gb/azure/storage/common/storage-use-emulator). For Mac users, we recommend creating a free [Azure account](https://azure.microsoft.com/en-us/free/services/storage/).
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA/Logistics lead discovery] Identify what pharmaceutical items are 
+    "active" : 6
+    "waiting" : 0
+```
 
-### GitHub OAuth application
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA/Logistics lead discovery] Identify what pharmaceutical items are 
+    "In Progress" : 6
+```
 
-[Register](https://github.com/settings/applications/new) a new OAuth application. This will allow users to connect to their GitHub account.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Enable Uber to deliver orders with pharmaceutical items
+    "active" : 0
+    "waiting" : 0
+```
 
-> Make sure you set the `Authorization callback URL` to `http://localhost:1337/auth/github/callback` (you can also use your preferred port).
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Enable Uber to deliver orders with pharmaceutical items
+```
 
-### Build the application
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [Pharma] - Check to see if pharmaceutical items are currently delivered by Uber
+    "active" : 0
+    "waiting" : 0
+```
 
-Building the application is easy. First run `npm install && npm run build`, to build the application.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [Pharma] - Check to see if pharmaceutical items are currently delivered by Uber
+    "In Progress" : 0
+```
 
-> If you run into problems with building using npm, this is likely caused by our use of `lerna` combined with some of the latest `node` features. A solution is to only use the npm install and build command in the `packages/website-frontend` directory.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Identify alcohol, knives and tobacco in database
+    "active" : 7
+    "waiting" : 1
+```
 
-### Configuration
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Identify alcohol, knives and tobacco in database
+    "In Progress" : 3
+    "Peer Review" : 1
+    "QA - Ready" : 0
+    "QA" : 4
+    "Ready For Merge" : 0
+```
 
-Next, you need to define the following environment variables in a Docker [enviroment variables file](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e-env-env-file):
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Align ContainsRestrictedBySignatureItems with HasAgeRestrictions from OrderPlaced message
+    "active" : 7
+    "waiting" : 5
+```
 
-> You can also enter these in the commandline, but we recommend using a separate file because it contains sensitive information.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Align ContainsRestrictedBySignatureItems with HasAgeRestrictions from OrderPlaced message
+    "In Progress" : 5
+    "Peer Review" : 2
+    "QA - Ready" : 3
+    "QA" : 2
+    "Blocked" : 0
+    "Ready For Merge" : 0
+```
 
-| Variable                          | Example                       | Explanation                                                                                                                        | Required |
-| --------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| `AZURE_STORAGE_CONNECTION_STRING` | `DefaultEndpointsProtocol...` | Azure-issued String to connect to your Azure Storage.                                                                              | Yes      |
-| `GH_BASIC_CLIENT_ID`              | `1234567890abcdef1234`        | GitHub-issued Client ID.                                                                                                           | Yes      |
-| `GH_BASIC_SECRET_ID`              | `1234567890...abcdef1`        | GitHub-issued Client Secret.                                                                                                       | Yes      |
-| `JWT_SECRET`                      | `u7apm8MrMBe8Fwrx4uMH`        | The secret for the HMAC algorithm that creates the signature of the [JWT](https://tools.ietf.org/html/rfc7519).                    | Yes      |
-| `NODE_ENV`                        | `development`                 | Node setting for production environment. Used by us for some SSL settings. Can be either: `production` (default) or `development`. | No       |
-| `PORT`                            | `1337`                        | Port on which Stryker Dashboard will listen for connections.                                                                       | No       |
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [prod issue]Uber ItemRestrictionService keeps references to removed product codes
+    "active" : 0
+    "waiting" : 6
+```
 
-### Start the application
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [prod issue]Uber ItemRestrictionService keeps references to removed product codes
+    "In Progress" : 0
+    "Peer Review" : 4
+    "QA - Ready" : 2
+    "QA" : 0
+```
 
-To start the application, you can now simply run `docker run --env-file env.list -p 1337:1337 stryker/dashboard`. This will spin-up a Docker container with the image that was build earlier; provide it with your environment variables set in the `env-list` file; and open port 1337 so you can access it on your local machine.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Send Alcohol Flags to Uber (Dark release)
+    "active" : 14
+    "waiting" : 11
+```
 
-Stryker Dashboard should now be available at [http://localhost:1337](http://localhost:1337).
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title Send Alcohol Flags to Uber (Dark release)
+    "In Progress" : 14
+    "Peer Review" : 6
+    "QA - Ready" : 2
+    "QA" : 0
+    "Ready For Merge" : 3
+```
 
-### (Optional) Front-end development
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [QA] Display return orders for Uber in Carrie
+    "active" : 0
+    "waiting" : 38
+```
 
-Building and re-running the Docker image everytime you make a small front-end change is a bit too much work. We use a proxy config file `packages/website-frontend/proxy.config.json`, to redirect requests from the frontend running locally (served by running `npm start`) to the backend running in a Docker container.
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [QA] Display return orders for Uber in Carrie
+    "Done" : 38
+```
 
-## Contributing
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA task] Communication to impacted teams on Return Enablement for Uber
+    "active" : 0
+    "waiting" : 0
+```
 
-Pull requests are welcome!
-See the [list of open issues](https://github.com/stryker-mutator/stryker-badge/issues) to get an idea of what you could work on.
-Or, if you have an awesome idea, please [create a new issue](https://github.com/stryker-mutator/stryker-badge/issues/new) or [discuss it on Gitter](https://gitter.im/stryker-mutator/stryker).
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA task] Communication to impacted teams on Return Enablement for Uber
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title E2E testing for alcohol enablement for Uber - UAT
+    "active" : 5
+    "waiting" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title E2E testing for alcohol enablement for Uber - UAT
+    "In Progress" : 5
+    "Blocked" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [Automation] System Tests to cover cases for Uber Alcohol Enablement
+    "active" : 7
+    "waiting" : 17
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [Automation] System Tests to cover cases for Uber Alcohol Enablement
+    "In Progress" : 7
+    "Peer Review" : 12
+    "Blocked" : 0
+    "Ready For Merge" : 5
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA tasks]Save delivery cancellation reasons from Uber for Vic orders (with alcohol orders)
+    "active" : 0
+    "waiting" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [BA tasks]Save delivery cancellation reasons from Uber for Vic orders (with alcohol orders)
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [SiteOps] Request update of restricted items to Uber to exclude alcohol
+    "active" : 0
+    "waiting" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [SiteOps] Request update of restricted items to Uber to exclude alcohol
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [LM task] - remove alcohol from spreadsheets
+    "active" : 0
+    "waiting" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title [LM task] - remove alcohol from spreadsheets
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title E2E testing for alcohol enablement for Uber - PROD [Dependency - contract finalized with Uber] [next Q4]
+    "active" : 0
+    "waiting" : 0
+```
+
+```mermaid
+  %%{init: {'theme':'neutral'}}%%
+  pie title E2E testing for alcohol enablement for Uber - PROD [Dependency - contract finalized with Uber] [next Q4]
+```
+
